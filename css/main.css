@@ -275,20 +275,27 @@ textarea {
 
 .content{
   background-color: white;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .footer{
   background-color: white;
   text-align: center;
 }
+
 .socials{
   text-align: right;
   float: right;
 }
+
 .menu{
   float: left;
 }
 
+.icons{
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
 
 
