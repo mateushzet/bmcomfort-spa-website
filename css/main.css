@@ -298,10 +298,36 @@ textarea {
   letter-spacing: 1px;
   cursor: pointer;
   margin-top: 3%;
+
 }
 .btn:hover{
   background: #890c1c;
 }
+
+.btnmenu{
+
+  display: inline-block;
+  color: #000000;
+  font-weight: 700;
+  font-size: 3vw;
+  font-family: Arial, Verdana, serif;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  border-radius: 15vw;
+  padding: 5% 10%;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+}
+
+#logobig{
+  display: none;
+}
+
+.btnmenu:hover{
+  background: #ffffff;
+}
+
 
 btnborder{
   width: 100%;
@@ -345,8 +371,10 @@ a{
   display: inline;
 }
 .icons{
+
   max-width: 5vw;
-  margin: 30px;
+  margin: 5px;
+
 }
 
 #imgLogo{
@@ -627,7 +655,79 @@ table.priceTable thead {
 }
 
 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  text-align: center;
+  margin: auto;
+  display: none;
+  background-color: #f9f9f9;
+  width: 60%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  z-index: 4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content h4:hover{
+  background-color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover{
+  background-color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-content h4{
+
+
+  font-size: 5vw;
+  font-weight: lighter;
+  line-height: 12vw;
+  margin:auto;
+  width: 80%;
+
+}
+
+a{
+  font-family: Arial, Verdana, serif;
+  color: #555555;
+  text-decoration: none;
+}
+
+li a{
+  font-family: Arial, Verdana, serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+#textMenu{
+  display: none;
+}
+
+
 @media only screen and (min-width: 768px){
+
+  #textMenu{
+    display: inline-block;
+  }
+
+
+  .dropdown {
+    display: none;
+  }
+
 
   h2{
     font-size: 3vw;
@@ -647,12 +747,32 @@ table.priceTable thead {
     max-width: 3vw;
     margin: 10px;
   }
+  #imgLogo{
+    max-width: 60vw;
+    margin-top: 20vh;
+  }
 
+  .massageBackground{
+    height: 30vw;
+  }
+
+  h6{
+    font-size: 6vw;
+  }
 }
 
 @media only screen and (min-width: 1524px){
+
+  #textMenu{
+    display: inline-block;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
   .container{
-    background-color: blue;
+    background-color: #a4a4a4;
   }
 
   header li a{
@@ -672,13 +792,60 @@ table.priceTable thead {
 
   h1{
     font-size: 5vw;
-   line-height: 10vw;
+   line-height: 5vw;
   }
 
   h2{
     font-size: 1vw;
-    margin: 0 10vw;
+    margin: 0 5vw;
   }
+
+
+  .btn{
+    font-size: 1vw;
+    padding: 1vw 8vw;
+    margin-top: 3vw;
+    margin-left: 12vw;
+
+  }
+  #imgLogo{
+    margin-top: 20vh;
+  }
+
+  h6{
+    font-size: 4vw;
+  }
+
+  .massageBackground{
+    height: 20vw;
+  }
+
+  .description{
+    padding-top: 20px;
+  }
+
+  h4 {
+    font-size: 1vw;
+    font-weight: lighter;
+    line-height: 2vw;
+    margin:5% 50% 0 10%;
+    float: left;
+  }
+  .offermini{
+
+    margin: 10%;
+    margin-top:-27%;
+    float: right;
+    max-width: 35%;
+
+  }
+
+  h5{
+    font-size: 2vw;
+    float: right;
+    margin: 0.5vw;
+  }
+
 
 }
 
