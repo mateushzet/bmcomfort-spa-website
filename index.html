@@ -12,7 +12,7 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-
+  <script src="js/main.js"></script>
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -42,18 +42,18 @@
 
       <div class="dropdown">
         <a  href="index.html"><img id="logo" src="logo.png" alt="logo"></a>
-        <a class="btnmenu">Menu</a>
+        <a id="btnmenu" onclick="menuClick()">Menu<h4 id="closeIcon">X</h4></a>
         <div class="socials">
           <a href="https://www.instagram.com/bodymindcomfort/" target="_blank"><img class="icons" src="images/instagram-icon.png" alt="instagram"></a>
           <a href="https://www.facebook.com/profile.php?id=100088221200821" target="_blank"><img class="icons" src="images/facebook-icon.png" alt="facebook"></a>
         </div>
-        <div class="dropdown-content">
-            <h4> <a  href="index.html">Strona główna</a></h4>
-            <h4><a  href="#kontakt">Kontakt</a></h4>
-            <h4><a  href="#oferta">Oferta</a></h4>
-            <h4> <a  href="#sceneria">Wybierz scenerię</a></h4>
-            <h4> <a  href="#cennik">Cennik</a></h4>
-            <h4> <a  href="#rezerwacja">Rezerwacja</a></h4>
+        <div class="dropdown-content" id="dropContent">
+          <h4> <a  href="index.html">Strona główna</a></h4>
+          <h4><a  href="#kontakt">Kontakt</a></h4>
+          <h4><a  href="#oferta">Oferta</a></h4>
+          <h4> <a  href="#sceneria">Wybierz scenerię</a></h4>
+          <h4> <a  href="#cennik">Cennik</a></h4>
+          <h4> <a  href="#rezerwacja">Rezerwacja</a></h4>
         </div>
 
       </div>
@@ -76,7 +76,7 @@
         Poczuj dotyk ciepłych kamieni, zapach czekolady i olejków eterycznych.
         Poczuj kojące doznania wszystkich zmysłów w odprężającej scenerii,
         jaką przygotowaliśmy specjalnie dla Ciebie.<br></h2><div class="btnborder">
-      <a class="btn">WYBIERZ SWOJĄ SCENERIĘ</a></div>
+      <a class="btn" id="btn2">WYBIERZ SWOJĄ SCENERIĘ</a></div>
       <br> <br>
     </div>
   </section>
@@ -90,7 +90,7 @@
     <h4>Chcesz zadbać o wyjątkową osobę i sprawić jej przyjemność? Przeżyjcie cudowne chwile odprężenia podczas wspólnego masażu.
       Po zakończonym rytuale w wybranej scenerii, zrelaksujcie się w klimatycznym jacuzzi przy blasku świec. Każde z was otrzyma również autorski koktajl,
       który rozpieści wasze podniebienia. </h4>
-    <a class="btn">ZAREZERWUJ</a>
+    <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
   </div>
 
   <section class="offers">
@@ -112,7 +112,7 @@
       <h4>Wspólny czas z przyjaciółką, mamą lub inną bliską osobą? Zostawcie za sobą codzienną rutynę. Oddajcie się przyjemności relaksu i rozluźnienia
         spędzając wyjątkowe chwile podczas odprężającego masażu oraz kąpieli w jacuzzi. Dodatkowo każda z was otrzyma wyjątkowy autorski koktajl,
         który rozpieści wasze podniebienia. </h4>
-      <a class="btn">ZAREZERWUJ</a>
+      <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
     </div>
 
   </section>
@@ -124,7 +124,7 @@
       <h3 class ="h3mini">(masaż, 1h w jacuzzi, autorski koktajl)</H3>
       <h3 class="h4bold">200zł</h3>
       <h4>Zrelaksuj się podczas masażu w wybranej przez Ciebie scenerii. Po kojącym rytuale, odpręż się w jacuzzi. Pozwól rozpieścić swoje zmysły blaskiem świec, spokojną muzyką oraz niepowtarzalnym autorskim koktajlem. </h4>
-      <a class="btn">ZAREZERWUJ</a>
+      <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
     </div>
 
 
@@ -136,7 +136,7 @@
       <h4>Chcesz zadbać o wyjątkową osobę i sprawić jej przyjemność? Przeżyjcie cudowne chwile odprężenia podczas wspólnego masażu.
         Po zakończonym rytuale w wybranej scenerii, zrelaksujcie się w klimatycznym jacuzzi przy blasku świec. Każde z was otrzyma również autorski koktajl,
         który rozpieści wasze podniebienia. </h4>
-      <a class="btn">ZAREZERWUJ</a>
+      <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
     </div>
 
     <div class="block">
@@ -147,7 +147,7 @@
       <h4>Wspólny czas z przyjaciółką, mamą lub inną bliską osobą? Zostawcie za sobą codzienną rutynę. Oddajcie się przyjemności relaksu i rozluźnienia
         spędzając wyjątkowe chwile podczas odprężającego masażu oraz kąpieli w jacuzzi. Dodatkowo każda z was otrzyma wyjątkowy autorski koktajl,
         który rozpieści wasze podniebienia. </h4>
-      <a class="btn">ZAREZERWUJ</a>
+      <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
     </div>
 
   </section>
@@ -163,7 +163,7 @@
 
         <a id="sceneria"> </a>
         <img src="images/back1.jpg" alt="img" class="massageBackground">
-        <h6>MASAŻ CZEKOLADOWY</h6>
+        <h6 >MASAŻ CZEKOLADOWY</h6>
       </div>
       <section class="description">
         <h4>
@@ -174,8 +174,7 @@
         </h4>
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>170zł</h5>
-        <a class="btn">Zarezerwuj przez Booksy</a>
-        <a class="btn">Zarezerwuj telefonicznie</a>
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
@@ -193,8 +192,7 @@
 
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>160zł</h5>
-        <a class="btn">Zarezerwuj przez Booksy</a>
-        <a class="btn">Zarezerwuj telefonicznie</a>
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
@@ -211,14 +209,13 @@
 
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>170zł</h5>
-        <a class="btn">Zarezerwuj przez Booksy</a>
-        <a class="btn">Zarezerwuj telefonicznie</a>
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
     <section class="massageType">
       <div class="banner">
-        <h6>MASAŻ MISTYCZNY</h6>
+        <h6 >MASAŻ MISTYCZNY</h6>
         <img src="images/back4.jpg" alt="img" class="massageBackground">
       </div>
       <section class="description">
@@ -227,8 +224,7 @@
         </h4>
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>170zł</h5>
-        <a class="btn">Zarezerwuj przez Booksy</a>
-        <a class="btn">Zarezerwuj telefonicznie</a>
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
@@ -245,16 +241,13 @@
 
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>160zł</h5>
-
-
-
-
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
     <section class="massageType">
       <div class="banner">
-        <h6>MASAŻ
+        <h6 class="longText">MASAŻ
           KLASYCZNY</h6>
         <img src="images/back6.png" alt="img" class="massageBackground">
       </div>
@@ -265,14 +258,13 @@
 
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>150zł</h5>
-        <a class="btn">Zarezerwuj przez Booksy</a>
-        <a class="btn">Zarezerwuj telefonicznie</a>
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
     <section class="massageType">
       <div class="banner">
-        <h6>MASAŻ
+        <h6 class="longText2">MASAŻ
           RELAKSACYJNY</h6>
         <img src="images/back7.jpg" alt="img" class="massageBackground">
       </div>
@@ -283,8 +275,7 @@
 
         <img src="images/offer1.jpg" alt="" class="offermini">
         <h5>150zł</h5>
-        <a class="btn">Zarezerwuj przez Booksy</a>
-        <a class="btn">Zarezerwuj telefonicznie</a>
+        <a class="btn" href="#rezerwacja">ZAREZERWUJ</a>
       </section>
     </section>
 
@@ -297,12 +288,11 @@
       który pomoże zadbać o kondycję fizyczną jak i psychiczną. Wybierz voucher na dowolny masaż który wywoła uśmiech na twarzy bliskiej osoby.</h4>
     <br>
 
-    <img class="bon" src="images/drink.jpg" alt="drink">
-    <br><br>
+    <img id="bon1" src="images/drink.jpg" alt="drink">
     <h4>
       W wybranym pakiecie otrzymasz jeden z naszych wyjątkowych autorskich koktajli, które rozpieszczą Twoje podniebienie.</h4>
     <br>
-    <img class="bon" src="images/bon.png" alt="bon">
+    <img id="bon2" src="images/bon.png" alt="bon">
   </section>
 
   <div class="redbanner">
@@ -310,17 +300,17 @@
   <section class="description2">
 
     <h4>
-      &#10097 Zjedz ostatni posiłek w odstępie nie krótszym niż 1 godzinę przed zabiegiem.
+      - Zjedz ostatni posiłek w odstępie nie krótszym niż 1 godzinę przed zabiegiem.
       <br><br>
-      &#10097 Jeśli masz silny dyskomfort trawienny, który może pojawiać się po posiłkach, skorzystaj z zabiegu na czczo.
+      - Jeśli masz silny dyskomfort trawienny, który może pojawiać się po posiłkach, skorzystaj z zabiegu na czczo.
       <br><br>
-      &#10097 Przyjdź 10-15minut wcześniej, by mieć czas, aby się przygotować.
+      - Przyjdź 10-15minut wcześniej, by mieć czas, aby się przygotować.
       <br><br>
-      &#10097 Załóż lekki strój i luźną koszulkę.
+      - Załóż lekki strój i luźną koszulkę.
       <br><br>
-      &#10097 Opróżnij pęcherz przed zabiegiem.
+      - Opróżnij pęcherz przed zabiegiem.
       <br><br>
-      &#10097 Jeśli pakiet zawiera jacuzzi zabierz strój kąpielowy.
+      - Jeśli pakiet zawiera jacuzzi zabierz strój kąpielowy.
     </h4>
 
   </section>
@@ -470,35 +460,40 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.0748808048043!2d19.940833515717493!3d50.066159279424205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bc24e2a619f%3A0xcdc05a797338f3ec!2sSpa%20Krak%C3%B3w%20Body%26Mind%20comfort!5e0!3m2!1spl!2spl!4v1675290617785!5m2!1spl!2spl" width="80%" height="400vw" margin="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-<h5>
+    <h5>
       Zacisze 6, Kraków
-</h5>
+    </h5>
     <h4>
       Doskonała lokalizacja w centrum Krakowa. Odzyskaj spokój w sercu miasta odcinając się od miejskiego zgiełku
       Jak ustalić wizytę
       Zarezerwuj wizytę przez nasz profil na portalu booksy lub telefonicznie
       <br>
-      <br>
 
     </h4>
-    <b>
-      Telefon: +48 733 304 836
-      <br>
-      <br>
-      Email: bmcomfortzacisze@gmail.com
-    </b>
+    <h5> Telefon: </h5>
+    <h4> +48 733 304 836
+    </h4>
+    <h5>Email: </h5>
+    <h4>bmcomfortzacisze@gmail.com
+    </h4>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <section class="description2">
     <a id="rezerwacja"> </a>
     <img src="images/booksy.png" alt="booksy" id="booksy">
-    <h5>Kliknij aby otworzyć okno rezerwacji<br><br>&#8595</h5>
+    <h5>Kliknij aby otworzyć okno rezerwacji</h5><h5 id="arrow">&#8595</h5>
     <div style="margin: 0 auto; text-align: center;">
       <script src="https://booksy.com/widget/code.js?id=171482&country=pl&lang=pl"></script>
-    </div>
-
+    </div><br>
+    <h4>lub zarezerwuj wizyte telefonicznie<br>+48 733 304 836
+    </h4>
   </section>
 
   <footer class="footer">&copy; Copyright Mateusz Zięcina</footer>
@@ -506,4 +501,5 @@
 </div>
 </body>
 </html>
+
 

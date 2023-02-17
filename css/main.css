@@ -289,7 +289,7 @@ textarea {
   display: inline-block;
   color: white;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 5vw;
   font-family: Arial, Verdana, serif;
   background: #8D2833;
   border: none;
@@ -297,34 +297,34 @@ textarea {
   padding: 5% 10%;
   letter-spacing: 1px;
   cursor: pointer;
-  margin-top: 3%;
+  margin-top: 8%;
 
 }
 .btn:hover{
   background: #890c1c;
 }
 
-.btnmenu{
+#btnmenu{
 
   display: inline-block;
   color: #000000;
   font-weight: 700;
   font-size: 3vw;
   font-family: Arial, Verdana, serif;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 15vw;
   padding: 5% 10%;
   letter-spacing: 1px;
   cursor: pointer;
-
+  margin-top: 5px;
 }
 
 #logobig{
   display: none;
 }
 
-.btnmenu:hover{
+#btnmenu:hover{
   background: #ffffff;
 }
 
@@ -379,7 +379,8 @@ a{
 
 #imgLogo{
   max-width: 60vw;
-  margin-top: 30vh;
+  margin-top: 20vh;
+  display: none;
 }
 #booksy{
   text-align: center;
@@ -392,17 +393,17 @@ a{
 }
 h1{
   font-family: Arial, Verdana, serif;
-  font-size: 8vw;
+  font-size: 10vw;
   line-height: 8vw;
   color: white;
   font-weight: lighter;
-  margin: 5%;
+  margin-top: 30vw;
 }
 h2{
   font-family: Arial, Verdana, serif;
   color: white;
   font-weight: lighter;
-  font-size: 3.5vw;
+  font-size: 5vw;
 }
 .contentblock{
   width: 100%;
@@ -427,7 +428,7 @@ h2{
 .block{
   border-radius: 20px;
   box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.1);
-  padding-bottom:100px;
+  padding-bottom:50px;
   border-color: rgba(0, 0, 0, 0.1);
   border-width: 0 0 1px 1px;
   border-style: solid;
@@ -437,7 +438,7 @@ h2{
 
 #offermid{
   border-radius: 20px;
-  padding-bottom:100px;
+  padding-bottom:50px;
   box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.1);
   border-width: 0 0 1px 1px;
@@ -462,9 +463,9 @@ h2{
 
 h4 {
   font-family: Arial, Verdana, serif;
-  color: #555555;
-  font-size: 2.5vw;
-  font-weight: lighter;
+  color: gray;
+  font-size: 5vw;
+  font-weight: 300;
   line-height: 6vw;
   margin:0 10px;
   text-align: center;
@@ -473,21 +474,21 @@ h4 {
 .h4bold {
   font-family: Arial, Verdana, serif;
   color: black;
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: bolder;
 }
 
 
 h3{
   font-family: Arial, Verdana, serif;
-  font-size: 4vw;
+  font-size: 6vw;
   color: #555555;
 
 
 }
 .h3mini{
   font-family: Arial, Verdana, serif;
-  font-size: 3vw;
+  font-size: 5vw;
   color: #555555;
   font-weight: lighter;
 }
@@ -523,9 +524,9 @@ h3{
   padding-top: 20px;
   margin: auto;
   margin-top: 3vw;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.1);
-  padding-bottom:100px;
+  padding-bottom:50px;
   border-color: rgba(0, 0, 0, 0.1);
   border-width: 0 0 1px 1px;
   border-style: solid;
@@ -540,9 +541,9 @@ h3{
   padding-top: 20px;
   margin: auto;
   margin-top: -20vw;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.1);
-  padding-bottom:100px;
+  padding-bottom:50px;
   border-color: rgba(0, 0, 0, 0.1);
   border-width: 0 0 1px 1px;
   border-style: solid;
@@ -556,7 +557,7 @@ h3{
   width: 80%;
   margin: auto;
   margin-top: -20vw;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   background-color: white;
   z-index: 1;
@@ -565,7 +566,7 @@ h3{
 h5{
   color: #8D2833;
   text-align: center;
-  font-size: 4vw;
+  font-size: 6vw;
 }
 .offermini{
   padding-top:5%;
@@ -586,12 +587,13 @@ h5{
 
 h6{
   position: relative;
-  z-index: 2;
+  z-index: 0;
   color: #ffffff;
   background-color: rgba(253, 31, 55, 0.23);
   max-width: 80%;
-  font-size: 8vw;
-  margin:auto;
+  font-size: 9vw;
+  margin: auto;
+  margin-top: 5vw;
 }
 
 #booksy{
@@ -603,8 +605,12 @@ h6{
   padding: 4vw;
 }
 
-.bon{
-  max-width: 60%;
+#bon1{
+  max-width: 40%;
+}
+
+#bon2{
+  max-width:80%;
 }
 
 .h4small{
@@ -639,7 +645,7 @@ table.priceTable {
   border-color: #3f1616;
   border-style: solid;
   color: black;
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 table.priceTable td, table.priceTable th {
@@ -653,8 +659,6 @@ table.priceTable thead {
   background-color: #7c3232;
   color: white;
 }
-
-
 
 .dropdown {
   position: relative;
@@ -671,10 +675,6 @@ table.priceTable thead {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 0;
   z-index: 4;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .dropdown-content h4:hover{
@@ -716,8 +716,26 @@ li a{
   display: none;
 }
 
+#closeIcon{
+  display: none;
+  float: right;
+  font-weight: 800;
+  margin: auto;
+  margin-left: 10px;
+  color: #000000;
+  font-size: 4vw;
+}
+
+#arrow{
+  font-size:10vw;
+  margin: 0;
+}
 
 @media only screen and (min-width: 768px){
+
+  .container{
+    background-color: #7a1212;
+  }
 
   #textMenu{
     display: inline-block;
@@ -730,11 +748,11 @@ li a{
 
 
   h2{
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   header li a{
-  padding: 1.5vw;
+    padding: 1.5vw;
     font-size: 1.8vw;
   }
 
@@ -748,8 +766,10 @@ li a{
     margin: 10px;
   }
   #imgLogo{
+    display: block;
     max-width: 60vw;
     margin-top: 20vh;
+    display: inline-block;
   }
 
   .massageBackground{
@@ -761,7 +781,7 @@ li a{
   }
 }
 
-@media only screen and (min-width: 1524px){
+@media only screen and (min-width: 1124px){
 
   #textMenu{
     display: inline-block;
@@ -772,7 +792,7 @@ li a{
   }
 
   .container{
-    background-color: #a4a4a4;
+    background-color: #ffffff;
   }
 
   header li a{
@@ -791,25 +811,28 @@ li a{
   }
 
   h1{
+    margin: 4vw;
     font-size: 5vw;
-   line-height: 5vw;
+    line-height: 5vw;
   }
 
   h2{
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin: 0 5vw;
   }
 
-
   .btn{
+
     font-size: 1vw;
-    padding: 1vw 8vw;
-    margin-top: 3vw;
-    margin-left: 12vw;
+
 
   }
+
   #imgLogo{
-    margin-top: 20vh;
+    display: block;
+    margin-top: 15vh;
+    display: inline-block;
+    max-width: 15vw;
   }
 
   h6{
@@ -846,7 +869,79 @@ li a{
     margin: 0.5vw;
   }
 
+  .offerimg{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+
+  h4 {
+    font-size: 1vw;
+    line-height: 2vw;
+    margin:0 10px;
+  }
+
+  .h4bold {
+    font-size: 1vw;
+  }
+
+
+  h3{
+    font-size: 2vw;
+
+
+  }
+  .h3mini{
+    font-size: 1vw;
+  }
+
+  #crown{
+    max-width: 15vw;
+    max-height: 5vw;
+  }
+
+  .block{
+    max-width: 20%;
+    border-radius: 20px;
+    box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.1);
+    padding-bottom:100px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    margin:10%;
+
+  }
+
+  #offermid{
+    max-width: 20%;
+    border-radius: 20px;
+    padding-bottom:100px;
+    box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    margin:  5% 15%;
+
+  }
+
+  #btn2{
+    max-width: 20%;
+    padding: 3% 5%;
+    margin: 5%;
+  }
+
+  #logobig{
+    display: inline-block;
+    max-width: 10vw;
+  float: left;
+  }
+
+  a{
+    z-index: 10;
+  }
+
 
 }
+
 
 
