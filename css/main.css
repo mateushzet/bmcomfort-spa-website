@@ -377,6 +377,10 @@ a{
 
 }
 
+.socials2{
+  display: none;
+}
+
 #imgLogo{
   max-width: 60vw;
   margin-top: 20vh;
@@ -512,8 +516,7 @@ h3{
 .massageBackground{
   width: 100%;
   height: 50vw;
-  z-index: 1;
-  position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
 }
@@ -535,7 +538,6 @@ h3{
 }
 
 .description2{
-  position: relative;
   text-align: center;
   width: 80%;
   padding-top: 20px;
@@ -586,7 +588,6 @@ h5{
 }
 
 h6{
-  position: relative;
   z-index: 0;
   color: #ffffff;
   background-color: rgba(253, 31, 55, 0.23);
@@ -594,19 +595,21 @@ h6{
   font-size: 9vw;
   margin: auto;
   margin-top: 5vw;
+  margin-top: -25vh;
 }
 
 #booksy{
+  margin-top: 25vh;
   width:50%;
 }
 
 .banner{
-  position: relative;
   padding: 4vw;
 }
 
 #bon1{
   max-width: 40%;
+  margin-right: 15%;
 }
 
 #bon2{
@@ -744,10 +747,6 @@ li a{
 
 @media only screen and (min-width: 768px){
 
-  .container{
-    background-color: #7a1212;
-  }
-
   #textMenu{
     display: inline-block;
   }
@@ -785,16 +784,32 @@ li a{
 
   .massageBackground{
     height: 30vw;
+    z-index: -2;
   }
 
   h6{
+    margin-top: -20vh;
     font-size: 6vw;
   }
+
+  #logobig {
+    display: inline-block;
+    max-width: 7vw;
+    float: left;
+    padding: 20px;
+  }
+
+  .socials2{
+
+    display: inline-block;
+  }
+
+
 }
 
-@media only screen and (min-width: 1124px){
+@media only screen and (min-width: 1424px) {
 
-  #textMenu{
+  #textMenu {
     display: inline-block;
   }
 
@@ -802,94 +817,94 @@ li a{
     display: none;
   }
 
-  .container{
+  .container {
     background-color: #ffffff;
   }
 
-  header li a{
+  header li a {
     padding: 1.5vw;
     font-size: 1vw;
   }
 
-  .icons{
+  .icons {
     max-width: 3vw;
     margin: 10px;
   }
 
-  #logo{
-    max-width:6vw;
-    margin:10px;
+  #logo {
+    max-width: 6vw;
+    margin: 10px;
   }
 
-  h1{
+  h1 {
     margin: 2vw;
     font-size: 5vw;
     line-height: 5vw;
   }
 
-  h2{
+  h2 {
     font-size: 1.5vw;
     margin: 0 5vw;
   }
 
-  .btn{
-
-    font-size: 1vw;
-
-
-  }
-
-  #imgLogo{
+  #imgLogo {
     display: block;
     margin-top: 30vh;
     display: inline-block;
     max-width: 10vw;
   }
 
-  h6{
+  h6 {
     font-size: 4vw;
   }
 
-  .massageBackground{
+  .massageBackground {
     height: 20vw;
   }
 
-  .description{
+  .description {
     padding-top: 20px;
+
+  }
+
+
+  .description2{
+
   }
 
   h4 {
     font-size: 1vw;
     font-weight: lighter;
     line-height: 2vw;
-    margin:5% 50% 0 10%;
+    margin: 5% 50% 0 10%;
     float: left;
   }
-  .offermini{
+
+  .offermini {
 
     margin: 10%;
-    margin-top:-27%;
+    margin-top: -27%;
     float: right;
     max-width: 35%;
 
   }
 
-  h5{
+  h5 {
     font-size: 2vw;
-    float: right;
     margin: 0.5vw;
   }
 
-  .offerimg{
+  .offerimg {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
+
   }
 
 
   h4 {
     font-size: 1vw;
     line-height: 2vw;
-    margin:0 10px;
+    margin: 0 10px;
   }
 
   .h4bold {
@@ -897,45 +912,46 @@ li a{
   }
 
 
-  h3{
+  h3 {
     font-size: 2vw;
 
 
   }
-  .h3mini{
+
+  .h3mini {
     font-size: 1vw;
   }
 
-  #crown{
+  #crown {
     max-width: 15vw;
     max-height: 5vw;
   }
 
-  .block{
+  .block {
     max-width: 20%;
     border-radius: 20px;
     box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.1);
-    padding-bottom:100px;
+    padding-bottom: 100px;
     border-color: rgba(0, 0, 0, 0.1);
     border-width: 0 0 1px 1px;
     border-style: solid;
-    margin:10%;
+    margin: 10%;
 
   }
 
-  #offermid{
+  #offermid {
     max-width: 20%;
     border-radius: 20px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
     box-shadow: 40px 20px 20px rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.1);
     border-width: 0 0 1px 1px;
     border-style: solid;
-    margin:  5% 15%;
+    margin: 5% 15%;
 
   }
 
-  #btn2{
+  #btn2 {
     max-width: 100%;
     padding: 1% 4%;
     margin: 5%;
@@ -943,51 +959,95 @@ li a{
     font-size: 0.9vw;
   }
 
-  #logobig{
+  #logobig {
     display: inline-block;
     max-width: 7vw;
-  float: left;
+    float: left;
     padding: 20px;
   }
 
-  a{
+  a {
     z-index: 10;
   }
 
-  .header{
+  .header {
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 2;
-    background-image: linear-gradient(0deg, rgba(255,255,255,0),white);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), white);
 
   }
 
-  .offers{
+  .offers {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
 
-  .block{
-    width: 20%;
-    margin:10%;
-    background-color: red;
-    margin: 0 10px;
+  .btn {
+    font-size: 0.8vw;
+    font-weight: 600;
+    margin-top: auto;
+    padding: 3% 15%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
-  #crown{
+  .block {
+    width: 50%;
+    margin: 40px 2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #crown {
     margin: auto;
     max-width: 25vw;
     max-height: 15vw;
+
   }
 
-  #blockMedia{
+  #blockMedia {
     display: none;
   }
 
-  #blockFull{
+  #blockFull {
     display: inline-block;
+    margin-top: -50px;
+  }
+
+  .offermini {
+    max-height: 100%;
+    width: 30%;
+    padding-top: 30%;
+    margin-right: 35%;
+  }
+
+  table.priceTable {
+    font-size: 2vw;
+  }
+
+  .btn3 {
+    font-size: 0.8vw;
+    font-weight: 600;
+    float: right;
+    padding: 3% 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .socials2{
+    display: inline-block;
+  }
+
+  .dark{
+    font-size: 4vw;
+  }
+
+  #description4{
+  height: 25vw;
   }
 
 }
